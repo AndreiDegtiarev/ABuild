@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Charts", "..\AWind\examples\Charts\Charts.vcxproj", "{478E03D6-6F97-4A70-A71F-3D0CED0F50EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Oscilloscope", "..\AWind\examples\Oscilloscope\Oscilloscope.vcxproj", "{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorsMonitor", "..\AWind\examples\SensorsMonitor\SensorsMonitor.vcxproj", "{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text", "..\AWind\examples\Text\Text.vcxproj", "{2AB46C8A-EAC7-4AE5-8EBA-7051620CFF0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AFrame", "AFrame", "{1129CE93-155B-4C66-B42B-AEE51627654E}"
+	ProjectSection(SolutionItems) = preProject
+		..\AFrame\ICriticalProcess.h = ..\AFrame\ICriticalProcess.h
+		..\AFrame\ISensor.h = ..\AFrame\ISensor.h
+		..\AFrame\ISensorHasDataEventReceiver.h = ..\AFrame\ISensorHasDataEventReceiver.h
+		..\AFrame\LinkedList.h = ..\AFrame\LinkedList.h
+		..\AFrame\Log.cpp = ..\AFrame\Log.cpp
+		..\AFrame\Log.h = ..\AFrame\Log.h
+		..\AFrame\MeasurementStatus.h = ..\AFrame\MeasurementStatus.h
+		..\AFrame\SensorManager.h = ..\AFrame\SensorManager.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASensor", "ASensor", "{018DAA23-BC4D-46CD-80D2-F8EC7F6FC63C}"
+	ProjectSection(SolutionItems) = preProject
+		..\ASensor\BMP085Sensor.h = ..\ASensor\BMP085Sensor.h
+		..\ASensor\DHTHumiditySensor.h = ..\ASensor\DHTHumiditySensor.h
+		..\ASensor\DHTTemperatureSensor.h = ..\ASensor\DHTTemperatureSensor.h
+		..\ASensor\DS18B20Sensor.h = ..\ASensor\DS18B20Sensor.h
+		..\ASensor\MagnetSensor.h = ..\ASensor\MagnetSensor.h
+		..\ASensor\MeasurementNode.h = ..\ASensor\MeasurementNode.h
+		..\ASensor\NRF24Transceiver.h = ..\ASensor\NRF24Transceiver.h
+		..\ASensor\printf.h = ..\ASensor\printf.h
+		..\ASensor\SoilMoistureSensor.h = ..\ASensor\SoilMoistureSensor.h
+		..\ASensor\VoltmeterSensor.h = ..\ASensor\VoltmeterSensor.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3-1692-4795-86FC-3DC68D90340D}"
+	ProjectSection(SolutionItems) = preProject
+		..\AWind\ArialNumFontPlus.c = ..\AWind\ArialNumFontPlus.c
+		..\AWind\ButtonWindow.h = ..\AWind\ButtonWindow.h
+		..\AWind\ChartDC.h = ..\AWind\ChartDC.h
+		..\AWind\ChartWindow.h = ..\AWind\ChartWindow.h
+		..\AWind\Color.h = ..\AWind\Color.h
+		..\AWind\DC.h = ..\AWind\DC.h
+		..\AWind\IContentChangedEventReceiver.h = ..\AWind\IContentChangedEventReceiver.h
+		..\AWind\IDataBuffer.h = ..\AWind\IDataBuffer.h
+		..\AWind\IDialogClosedEventReceiver.h = ..\AWind\IDialogClosedEventReceiver.h
+		..\AWind\ITouchEventReceiver.h = ..\AWind\ITouchEventReceiver.h
+		..\AWind\KeyboardWindow.h = ..\AWind\KeyboardWindow.h
+		..\AWind\MainWindow.h = ..\AWind\MainWindow.h
+		..\AWind\README.md = ..\AWind\README.md
+		..\AWind\SensorDataBuffer.h = ..\AWind\SensorDataBuffer.h
+		..\AWind\SensorWindow.h = ..\AWind\SensorWindow.h
+		..\AWind\TextBox.h = ..\AWind\TextBox.h
+		..\AWind\TextBoxNumber.cpp = ..\AWind\TextBoxNumber.cpp
+		..\AWind\TextBoxNumber.h = ..\AWind\TextBoxNumber.h
+		..\AWind\TextBoxString.h = ..\AWind\TextBoxString.h
+		..\AWind\TimeSerieBuffer.h = ..\AWind\TimeSerieBuffer.h
+		..\AWind\TouchManager.h = ..\AWind\TouchManager.h
+		..\AWind\ViewModusWindow.h = ..\AWind\ViewModusWindow.h
+		..\AWind\Window.h = ..\AWind\Window.h
+		..\AWind\WindowsManager.h = ..\AWind\WindowsManager.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5FA51A5D-F7CA-4BA6-8B1B-743FC702C128}"
+	ProjectSection(SolutionItems) = preProject
+		..\AWind\docs\Doxyfile = ..\AWind\docs\Doxyfile
+		..\AWind\docs\Main.md = ..\AWind\docs\Main.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{478E03D6-6F97-4A70-A71F-3D0CED0F50EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{478E03D6-6F97-4A70-A71F-3D0CED0F50EA}.Debug|Win32.Build.0 = Debug|Win32
+		{478E03D6-6F97-4A70-A71F-3D0CED0F50EA}.Release|Win32.ActiveCfg = Release|Win32
+		{478E03D6-6F97-4A70-A71F-3D0CED0F50EA}.Release|Win32.Build.0 = Release|Win32
+		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Debug|Win32.Build.0 = Debug|Win32
+		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Release|Win32.ActiveCfg = Release|Win32
+		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Release|Win32.Build.0 = Release|Win32
+		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Debug|Win32.Build.0 = Debug|Win32
+		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Release|Win32.ActiveCfg = Release|Win32
+		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Release|Win32.Build.0 = Release|Win32
+		{2AB46C8A-EAC7-4AE5-8EBA-7051620CFF0F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2AB46C8A-EAC7-4AE5-8EBA-7051620CFF0F}.Debug|Win32.Build.0 = Debug|Win32
+		{2AB46C8A-EAC7-4AE5-8EBA-7051620CFF0F}.Release|Win32.ActiveCfg = Release|Win32
+		{2AB46C8A-EAC7-4AE5-8EBA-7051620CFF0F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FA51A5D-F7CA-4BA6-8B1B-743FC702C128} = {E5E515A3-1692-4795-86FC-3DC68D90340D}
+	EndGlobalSection
+EndGlobal
