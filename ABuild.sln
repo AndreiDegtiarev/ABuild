@@ -1,20 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Oscilloscope", "..\AWind\examples\Oscilloscope\Oscilloscope.vcxproj", "{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorsMonitor", "..\AWind\examples\SensorsMonitor\SensorsMonitor.vcxproj", "{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AFrame", "AFrame", "{1129CE93-155B-4C66-B42B-AEE51627654E}"
 	ProjectSection(SolutionItems) = preProject
 		..\AFrame\AHelper.h = ..\AFrame\AHelper.h
 		..\AFrame\ICriticalProcess.h = ..\AFrame\ICriticalProcess.h
+		..\AFrame\IDataBuffer.h = ..\AFrame\IDataBuffer.h
 		..\AFrame\ISensor.h = ..\AFrame\ISensor.h
 		..\AFrame\ISensorHasDataEventReceiver.h = ..\AFrame\ISensorHasDataEventReceiver.h
+		..\AFrame\ISensorMeasuredEventReceiver.h = ..\AFrame\ISensorMeasuredEventReceiver.h
 		..\AFrame\LinkedList.h = ..\AFrame\LinkedList.h
 		..\AFrame\Log.cpp = ..\AFrame\Log.cpp
 		..\AFrame\Log.h = ..\AFrame\Log.h
 		..\AFrame\MeasurementStatus.h = ..\AFrame\MeasurementStatus.h
+		..\AFrame\README.md = ..\AFrame\README.md
+		..\AFrame\SensorDataBuffer.h = ..\AFrame\SensorDataBuffer.h
 		..\AFrame\SensorManager.h = ..\AFrame\SensorManager.h
 	EndProjectSection
 EndProject
@@ -38,14 +38,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\ChartWindow.h = ..\AWind\ChartWindow.h
 		..\AWind\Color.h = ..\AWind\Color.h
 		..\AWind\DC.h = ..\AWind\DC.h
+		..\AWind\Decorator.h = ..\AWind\Decorator.h
+		..\AWind\DecoratorPrimitives.h = ..\AWind\DecoratorPrimitives.h
 		..\AWind\Gauge.h = ..\AWind\Gauge.h
+		..\AWind\GaugeBar.h = ..\AWind\GaugeBar.h
+		..\AWind\GaugeRadialPointer.h = ..\AWind\GaugeRadialPointer.h
 		..\AWind\IContentChangedEventReceiver.h = ..\AWind\IContentChangedEventReceiver.h
 		..\AWind\IDataBuffer.h = ..\AWind\IDataBuffer.h
 		..\AWind\IDialogClosedEventReceiver.h = ..\AWind\IDialogClosedEventReceiver.h
 		..\AWind\ITouchEventReceiver.h = ..\AWind\ITouchEventReceiver.h
 		..\AWind\KeyboardWindow.h = ..\AWind\KeyboardWindow.h
 		..\AWind\MainWindow.h = ..\AWind\MainWindow.h
-		..\AWind\SensorDataBuffer.h = ..\AWind\SensorDataBuffer.h
 		..\AWind\SensorWindow.h = ..\AWind\SensorWindow.h
 		..\AWind\TextBox.h = ..\AWind\TextBox.h
 		..\AWind\TextBoxNumber.cpp = ..\AWind\TextBoxNumber.cpp
@@ -53,17 +56,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\TextBoxString.h = ..\AWind\TextBoxString.h
 		..\AWind\TimeSerieBuffer.h = ..\AWind\TimeSerieBuffer.h
 		..\AWind\ViewModusWindow.h = ..\AWind\ViewModusWindow.h
+		..\AWind\Window.cpp = ..\AWind\Window.cpp
 		..\AWind\Window.h = ..\AWind\Window.h
 		..\AWind\WindowsManager.h = ..\AWind\WindowsManager.h
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5FA51A5D-F7CA-4BA6-8B1B-743FC702C128}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gauges", "..\AWind\examples\Gauges\Gauges.vcxproj", "{DBE3BD17-CEB7-4F7F-A100-05C84D387386}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Charts", "..\AWind\examples\Charts\Charts.vcxproj", "{7732309B-659C-4E03-AEC4-19BF73AA042B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text", "..\AWind\examples\Text\Text.vcxproj", "{D9B94910-0E5B-4F98-8F44-D29E7B1DA3C3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gauges", "..\AWind\examples\Gauges\Gauges.vcxproj", "{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Charts", "..\AWind\examples\Charts\Charts.vcxproj", "{67A7EE07-F5A7-4C74-B9C5-1B3C25B1CA0D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Oscilloscope", "..\AWind\examples\Oscilloscope\Oscilloscope.vcxproj", "{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorsMonitor", "..\AWind\examples\SensorsMonitor\SensorsMonitor.vcxproj", "{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text", "..\AWind\examples\Text\Text.vcxproj", "{13989377-A057-493F-92C3-DFE6C5C5A896}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensors", "..\ASensor\examples\Sensors\Sensors.vcxproj", "{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,26 +81,30 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Debug|Win32.ActiveCfg = Debug|Win32
-		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Debug|Win32.Build.0 = Debug|Win32
-		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Release|Win32.ActiveCfg = Release|Win32
-		{7A9F9782-DCB5-4018-A5BE-B2BCF26F1016}.Release|Win32.Build.0 = Release|Win32
-		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Debug|Win32.ActiveCfg = Debug|Win32
-		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Debug|Win32.Build.0 = Debug|Win32
-		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Release|Win32.ActiveCfg = Release|Win32
-		{363FA0FD-BC2C-4588-AA25-C4043BAA4C7B}.Release|Win32.Build.0 = Release|Win32
-		{DBE3BD17-CEB7-4F7F-A100-05C84D387386}.Debug|Win32.ActiveCfg = Debug|Win32
-		{DBE3BD17-CEB7-4F7F-A100-05C84D387386}.Debug|Win32.Build.0 = Debug|Win32
-		{DBE3BD17-CEB7-4F7F-A100-05C84D387386}.Release|Win32.ActiveCfg = Release|Win32
-		{DBE3BD17-CEB7-4F7F-A100-05C84D387386}.Release|Win32.Build.0 = Release|Win32
-		{D9B94910-0E5B-4F98-8F44-D29E7B1DA3C3}.Debug|Win32.ActiveCfg = Debug|Win32
-		{D9B94910-0E5B-4F98-8F44-D29E7B1DA3C3}.Debug|Win32.Build.0 = Debug|Win32
-		{D9B94910-0E5B-4F98-8F44-D29E7B1DA3C3}.Release|Win32.ActiveCfg = Release|Win32
-		{D9B94910-0E5B-4F98-8F44-D29E7B1DA3C3}.Release|Win32.Build.0 = Release|Win32
-		{67A7EE07-F5A7-4C74-B9C5-1B3C25B1CA0D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{67A7EE07-F5A7-4C74-B9C5-1B3C25B1CA0D}.Debug|Win32.Build.0 = Debug|Win32
-		{67A7EE07-F5A7-4C74-B9C5-1B3C25B1CA0D}.Release|Win32.ActiveCfg = Release|Win32
-		{67A7EE07-F5A7-4C74-B9C5-1B3C25B1CA0D}.Release|Win32.Build.0 = Release|Win32
+		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Debug|Win32.Build.0 = Debug|Win32
+		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Release|Win32.ActiveCfg = Release|Win32
+		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Release|Win32.Build.0 = Release|Win32
+		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Debug|Win32.Build.0 = Debug|Win32
+		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Release|Win32.ActiveCfg = Release|Win32
+		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Release|Win32.Build.0 = Release|Win32
+		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Debug|Win32.Build.0 = Debug|Win32
+		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Release|Win32.ActiveCfg = Release|Win32
+		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Release|Win32.Build.0 = Release|Win32
+		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Debug|Win32.Build.0 = Debug|Win32
+		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Release|Win32.ActiveCfg = Release|Win32
+		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Release|Win32.Build.0 = Release|Win32
+		{13989377-A057-493F-92C3-DFE6C5C5A896}.Debug|Win32.ActiveCfg = Debug|Win32
+		{13989377-A057-493F-92C3-DFE6C5C5A896}.Debug|Win32.Build.0 = Debug|Win32
+		{13989377-A057-493F-92C3-DFE6C5C5A896}.Release|Win32.ActiveCfg = Release|Win32
+		{13989377-A057-493F-92C3-DFE6C5C5A896}.Release|Win32.Build.0 = Release|Win32
+		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Debug|Win32.Build.0 = Debug|Win32
+		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Release|Win32.ActiveCfg = Release|Win32
+		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
