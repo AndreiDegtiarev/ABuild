@@ -69,11 +69,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gauges", "..\AWind\examples
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Oscilloscope", "..\AWind\examples\Oscilloscope\Oscilloscope.vcxproj", "{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorsMonitor", "..\AWind\examples\SensorsMonitor\SensorsMonitor.vcxproj", "{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text", "..\AWind\examples\Text\Text.vcxproj", "{13989377-A057-493F-92C3-DFE6C5C5A896}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensors", "..\ASensor\examples\Sensors\Sensors.vcxproj", "{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorsMonitor", "..\AWind\examples\SensorsMonitor\SensorsMonitor.vcxproj", "{89757F49-2DFE-4902-83E8-B3BD726D0F86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,10 +93,6 @@ Global
 		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Debug|Win32.Build.0 = Debug|Win32
 		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Release|Win32.ActiveCfg = Release|Win32
 		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Release|Win32.Build.0 = Release|Win32
-		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Debug|Win32.ActiveCfg = Debug|Win32
-		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Debug|Win32.Build.0 = Debug|Win32
-		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Release|Win32.ActiveCfg = Release|Win32
-		{9E66D0EC-8DC4-4A2C-8331-3EA9F15A0ECF}.Release|Win32.Build.0 = Release|Win32
 		{13989377-A057-493F-92C3-DFE6C5C5A896}.Debug|Win32.ActiveCfg = Debug|Win32
 		{13989377-A057-493F-92C3-DFE6C5C5A896}.Debug|Win32.Build.0 = Debug|Win32
 		{13989377-A057-493F-92C3-DFE6C5C5A896}.Release|Win32.ActiveCfg = Release|Win32
@@ -105,6 +101,10 @@ Global
 		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Debug|Win32.Build.0 = Debug|Win32
 		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Release|Win32.ActiveCfg = Release|Win32
 		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Release|Win32.Build.0 = Release|Win32
+		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Debug|Win32.ActiveCfg = Debug|Win32
+		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Debug|Win32.Build.0 = Debug|Win32
+		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Release|Win32.ActiveCfg = Release|Win32
+		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
