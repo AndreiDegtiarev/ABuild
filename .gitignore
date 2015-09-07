@@ -17,7 +17,6 @@ $RECYCLE.BIN/
 *.msp
 
 # VS Files
-*.vcxproj
 *.sdf
 *.opensdf
 *.suo

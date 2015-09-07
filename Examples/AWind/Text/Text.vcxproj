@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Visual Micro\.Text.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\AWind\examples\Text\Text.pde" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{476CD095-7B39-43D3-B84F-7572B72DCF72}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Charts</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=8000000L;ARDUINO=165;ARDUINO_AVR_PRO;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\variants\eightanaloginputs;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\examples\Text;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/avr/include/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr//avr/include/avr/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ABuild\Examples\Text\Visual Micro\.Text.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\variants\eightanaloginputs;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\examples\Text;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\variants\eightanaloginputs;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\arduino-DHT;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ASensor;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\OneWire;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\RF24;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\libraries\SPI;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/avr/include/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr//avr/include/avr/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

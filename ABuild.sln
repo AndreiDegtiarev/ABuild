@@ -24,8 +24,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASensor", "ASensor", "{018D
 		..\ASensor\DHTHumiditySensor.h = ..\ASensor\DHTHumiditySensor.h
 		..\ASensor\DHTTemperatureSensor.h = ..\ASensor\DHTTemperatureSensor.h
 		..\ASensor\DS18B20Sensor.h = ..\ASensor\DS18B20Sensor.h
+		..\ASensor\DustSensor.h = ..\ASensor\DustSensor.h
 		..\ASensor\MagnetSensor.h = ..\ASensor\MagnetSensor.h
 		..\ASensor\MeasurementNode.h = ..\ASensor\MeasurementNode.h
+		..\ASensor\MQ4MethaneGasSensor.h = ..\ASensor\MQ4MethaneGasSensor.h
 		..\ASensor\NRF24Transceiver.h = ..\ASensor\NRF24Transceiver.h
 		..\ASensor\SoilMoistureSensor.h = ..\ASensor\SoilMoistureSensor.h
 		..\ASensor\VoltmeterSensor.h = ..\ASensor\VoltmeterSensor.h
@@ -63,17 +65,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5FA51A5D-F7CA-4BA6-8B1B-743FC702C128}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Charts", "..\AWind\examples\Charts\Charts.vcxproj", "{7732309B-659C-4E03-AEC4-19BF73AA042B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{DE136A79-E5A5-4D09-9164-066E69058707}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gauges", "..\AWind\examples\Gauges\Gauges.vcxproj", "{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{8AAF282E-ABF5-4EA3-9E57-989C557A11A7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Oscilloscope", "..\AWind\examples\Oscilloscope\Oscilloscope.vcxproj", "{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASensor", "ASensor", "{96D17C9A-E703-45C5-870D-3C1E3399EFD2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text", "..\AWind\examples\Text\Text.vcxproj", "{13989377-A057-493F-92C3-DFE6C5C5A896}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensors", "Examples\ASensor\Sensors\Sensors.vcxproj", "{D67D18DB-F6A9-4BF7-9DD1-24559BBB793B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sensors", "..\ASensor\examples\Sensors\Sensors.vcxproj", "{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Charts", "Examples\AWind\Charts\Charts.vcxproj", "{31BD563D-3CBE-4DCF-A07F-0C4B2F782099}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorsMonitor", "..\AWind\examples\SensorsMonitor\SensorsMonitor.vcxproj", "{89757F49-2DFE-4902-83E8-B3BD726D0F86}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gauges", "Examples\AWind\Gauges\Gauges.vcxproj", "{23C29474-99E8-401F-9659-81E792373812}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Oscilloscope", "Examples\AWind\Oscilloscope\Oscilloscope.vcxproj", "{1A6BB855-97E4-4709-B450-3F4747C31668}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorsMonitor", "Examples\AWind\SensorsMonitor\SensorsMonitor.vcxproj", "{3A1EA4CD-411A-40C1-935B-6231E0A5F2D2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text", "Examples\AWind\Text\Text.vcxproj", "{476CD095-7B39-43D3-B84F-7572B72DCF72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,35 +89,43 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Debug|Win32.ActiveCfg = Debug|Win32
-		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Debug|Win32.Build.0 = Debug|Win32
-		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Release|Win32.ActiveCfg = Release|Win32
-		{7732309B-659C-4E03-AEC4-19BF73AA042B}.Release|Win32.Build.0 = Release|Win32
-		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Debug|Win32.ActiveCfg = Debug|Win32
-		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Debug|Win32.Build.0 = Debug|Win32
-		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Release|Win32.ActiveCfg = Release|Win32
-		{0CEF8506-1EC1-4DB3-94B6-B4A2CE3C82F7}.Release|Win32.Build.0 = Release|Win32
-		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Debug|Win32.ActiveCfg = Debug|Win32
-		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Debug|Win32.Build.0 = Debug|Win32
-		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Release|Win32.ActiveCfg = Release|Win32
-		{1AFF1942-DBE3-494E-AEB4-CFBE4666E620}.Release|Win32.Build.0 = Release|Win32
-		{13989377-A057-493F-92C3-DFE6C5C5A896}.Debug|Win32.ActiveCfg = Debug|Win32
-		{13989377-A057-493F-92C3-DFE6C5C5A896}.Debug|Win32.Build.0 = Debug|Win32
-		{13989377-A057-493F-92C3-DFE6C5C5A896}.Release|Win32.ActiveCfg = Release|Win32
-		{13989377-A057-493F-92C3-DFE6C5C5A896}.Release|Win32.Build.0 = Release|Win32
-		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Debug|Win32.ActiveCfg = Debug|Win32
-		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Debug|Win32.Build.0 = Debug|Win32
-		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Release|Win32.ActiveCfg = Release|Win32
-		{6E8E6B5C-81D5-40AF-BE2E-DA9E798802F0}.Release|Win32.Build.0 = Release|Win32
-		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Debug|Win32.ActiveCfg = Debug|Win32
-		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Debug|Win32.Build.0 = Debug|Win32
-		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Release|Win32.ActiveCfg = Release|Win32
-		{89757F49-2DFE-4902-83E8-B3BD726D0F86}.Release|Win32.Build.0 = Release|Win32
+		{D67D18DB-F6A9-4BF7-9DD1-24559BBB793B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D67D18DB-F6A9-4BF7-9DD1-24559BBB793B}.Debug|Win32.Build.0 = Debug|Win32
+		{D67D18DB-F6A9-4BF7-9DD1-24559BBB793B}.Release|Win32.ActiveCfg = Release|Win32
+		{D67D18DB-F6A9-4BF7-9DD1-24559BBB793B}.Release|Win32.Build.0 = Release|Win32
+		{31BD563D-3CBE-4DCF-A07F-0C4B2F782099}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31BD563D-3CBE-4DCF-A07F-0C4B2F782099}.Debug|Win32.Build.0 = Debug|Win32
+		{31BD563D-3CBE-4DCF-A07F-0C4B2F782099}.Release|Win32.ActiveCfg = Release|Win32
+		{31BD563D-3CBE-4DCF-A07F-0C4B2F782099}.Release|Win32.Build.0 = Release|Win32
+		{23C29474-99E8-401F-9659-81E792373812}.Debug|Win32.ActiveCfg = Debug|Win32
+		{23C29474-99E8-401F-9659-81E792373812}.Debug|Win32.Build.0 = Debug|Win32
+		{23C29474-99E8-401F-9659-81E792373812}.Release|Win32.ActiveCfg = Release|Win32
+		{23C29474-99E8-401F-9659-81E792373812}.Release|Win32.Build.0 = Release|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31668}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31668}.Debug|Win32.Build.0 = Debug|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31668}.Release|Win32.ActiveCfg = Release|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31668}.Release|Win32.Build.0 = Release|Win32
+		{3A1EA4CD-411A-40C1-935B-6231E0A5F2D2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A1EA4CD-411A-40C1-935B-6231E0A5F2D2}.Debug|Win32.Build.0 = Debug|Win32
+		{3A1EA4CD-411A-40C1-935B-6231E0A5F2D2}.Release|Win32.ActiveCfg = Release|Win32
+		{3A1EA4CD-411A-40C1-935B-6231E0A5F2D2}.Release|Win32.Build.0 = Release|Win32
+		{476CD095-7B39-43D3-B84F-7572B72DCF72}.Debug|Win32.ActiveCfg = Debug|Win32
+		{476CD095-7B39-43D3-B84F-7572B72DCF72}.Debug|Win32.Build.0 = Debug|Win32
+		{476CD095-7B39-43D3-B84F-7572B72DCF72}.Release|Win32.ActiveCfg = Release|Win32
+		{476CD095-7B39-43D3-B84F-7572B72DCF72}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5FA51A5D-F7CA-4BA6-8B1B-743FC702C128} = {E5E515A3-1692-4795-86FC-3DC68D90340D}
+		{8AAF282E-ABF5-4EA3-9E57-989C557A11A7} = {DE136A79-E5A5-4D09-9164-066E69058707}
+		{96D17C9A-E703-45C5-870D-3C1E3399EFD2} = {DE136A79-E5A5-4D09-9164-066E69058707}
+		{31BD563D-3CBE-4DCF-A07F-0C4B2F782099} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{23C29474-99E8-401F-9659-81E792373812} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{1A6BB855-97E4-4709-B450-3F4747C31668} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{3A1EA4CD-411A-40C1-935B-6231E0A5F2D2} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{476CD095-7B39-43D3-B84F-7572B72DCF72} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{D67D18DB-F6A9-4BF7-9DD1-24559BBB793B} = {96D17C9A-E703-45C5-870D-3C1E3399EFD2}
 	EndGlobalSection
 EndGlobal
