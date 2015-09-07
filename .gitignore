@@ -25,6 +25,10 @@ $RECYCLE.BIN/
 *.xml
 *.ipch
 *.vsarduino.h
+*.log
+*.tlog
+*.cache
+*.lastbuildstate
 # =========================
 # Operating System Files
 # =========================
