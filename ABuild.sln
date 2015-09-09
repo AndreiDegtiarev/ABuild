@@ -46,7 +46,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\GaugeBar.h = ..\AWind\GaugeBar.h
 		..\AWind\GaugeRadialPointer.h = ..\AWind\GaugeRadialPointer.h
 		..\AWind\IContentChangedEventReceiver.h = ..\AWind\IContentChangedEventReceiver.h
-		..\AWind\IDataBuffer.h = ..\AWind\IDataBuffer.h
 		..\AWind\IDialogClosedEventReceiver.h = ..\AWind\IDialogClosedEventReceiver.h
 		..\AWind\ITouchEventReceiver.h = ..\AWind\ITouchEventReceiver.h
 		..\AWind\KeyboardWindow.h = ..\AWind\KeyboardWindow.h
