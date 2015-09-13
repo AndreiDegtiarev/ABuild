@@ -30,12 +30,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASensor", "ASensor", "{018D
 		..\ASensor\MQ4MethaneGasSensor.h = ..\ASensor\MQ4MethaneGasSensor.h
 		..\ASensor\NRF24Transceiver.h = ..\ASensor\NRF24Transceiver.h
 		..\ASensor\SoilMoistureSensor.h = ..\ASensor\SoilMoistureSensor.h
+		..\ASensor\Transceiver.h = ..\ASensor\Transceiver.h
 		..\ASensor\VoltmeterSensor.h = ..\ASensor\VoltmeterSensor.h
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3-1692-4795-86FC-3DC68D90340D}"
 	ProjectSection(SolutionItems) = preProject
 		..\AWind\ArialNumFontPlus.c = ..\AWind\ArialNumFontPlus.c
+		..\AWind\Button.h = ..\AWind\Button.h
 		..\AWind\ButtonWindow.h = ..\AWind\ButtonWindow.h
 		..\AWind\ChartDC.h = ..\AWind\ChartDC.h
 		..\AWind\ChartWindow.h = ..\AWind\ChartWindow.h
@@ -43,6 +45,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\DC.h = ..\AWind\DC.h
 		..\AWind\Decorator.h = ..\AWind\Decorator.h
 		..\AWind\DecoratorPrimitives.h = ..\AWind\DecoratorPrimitives.h
+		..\AWind\DefaultDecorators.h = ..\AWind\DefaultDecorators.h
+		..\AWind\Dialog.h = ..\AWind\Dialog.h
+		..\AWind\Environment.cpp = ..\AWind\Environment.cpp
+		..\AWind\Environment.h = ..\AWind\Environment.h
 		..\AWind\Gauge.h = ..\AWind\Gauge.h
 		..\AWind\GaugeBar.h = ..\AWind\GaugeBar.h
 		..\AWind\GaugeRadialPointer.h = ..\AWind\GaugeRadialPointer.h
@@ -50,6 +56,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\IDialogClosedEventReceiver.h = ..\AWind\IDialogClosedEventReceiver.h
 		..\AWind\ITouchEventReceiver.h = ..\AWind\ITouchEventReceiver.h
 		..\AWind\KeyboardWindow.h = ..\AWind\KeyboardWindow.h
+		..\AWind\Label.h = ..\AWind\Label.h
 		..\AWind\MainWindow.h = ..\AWind\MainWindow.h
 		..\AWind\SensorWindow.h = ..\AWind\SensorWindow.h
 		..\AWind\TextBox.h = ..\AWind\TextBox.h
@@ -85,6 +92,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Text", "Examples\AWind\Text
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowSelector", "Examples\AWind\WindowSelector\WindowSelector.vcxproj", "{CE03CF58-8D36-47D2-9936-A9E57B9746D0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartDHT", "Examples\AWind\SmartDHT\SmartDHT.vcxproj", "{C42BA089-251A-47DA-9E51-B1405574C521}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dialogs", "Examples\AWind\Dialogs\Dialogs.vcxproj", "{A6E84EDC-A70A-498A-A85B-074AA80D01D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -119,6 +130,14 @@ Global
 		{CE03CF58-8D36-47D2-9936-A9E57B9746D0}.Debug|Win32.Build.0 = Release|Win32
 		{CE03CF58-8D36-47D2-9936-A9E57B9746D0}.Release|Win32.ActiveCfg = Release|Win32
 		{CE03CF58-8D36-47D2-9936-A9E57B9746D0}.Release|Win32.Build.0 = Release|Win32
+		{C42BA089-251A-47DA-9E51-B1405574C521}.Debug|Win32.ActiveCfg = Release|Win32
+		{C42BA089-251A-47DA-9E51-B1405574C521}.Debug|Win32.Build.0 = Release|Win32
+		{C42BA089-251A-47DA-9E51-B1405574C521}.Release|Win32.ActiveCfg = Release|Win32
+		{C42BA089-251A-47DA-9E51-B1405574C521}.Release|Win32.Build.0 = Release|Win32
+		{A6E84EDC-A70A-498A-A85B-074AA80D01D1}.Debug|Win32.ActiveCfg = Release|Win32
+		{A6E84EDC-A70A-498A-A85B-074AA80D01D1}.Debug|Win32.Build.0 = Release|Win32
+		{A6E84EDC-A70A-498A-A85B-074AA80D01D1}.Release|Win32.ActiveCfg = Release|Win32
+		{A6E84EDC-A70A-498A-A85B-074AA80D01D1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,6 +152,8 @@ Global
 		{3A1EA4CD-411A-40C1-935B-6231E0A5F2D2} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 		{476CD095-7B39-43D3-B84F-7572B72DCF72} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 		{CE03CF58-8D36-47D2-9936-A9E57B9746D0} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{C42BA089-251A-47DA-9E51-B1405574C521} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{A6E84EDC-A70A-498A-A85B-074AA80D01D1} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 		{D67D18DB-F6A9-4BF7-9DD1-24559BBB793B} = {96D17C9A-E703-45C5-870D-3C1E3399EFD2}
 	EndGlobalSection
 EndGlobal

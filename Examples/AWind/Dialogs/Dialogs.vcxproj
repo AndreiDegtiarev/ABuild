@@ -7,13 +7,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\AWind\examples\WindowSelector\WindowSelector.pde" />
+    <None Include="..\..\..\..\AWind\examples\Dialogs\Dialogs.pde" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Visual Micro\.WindowSelector.vsarduino.h" />
+    <ClInclude Include="Visual Micro\.Dialogs.vsarduino.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CE03CF58-8D36-47D2-9936-A9E57B9746D0}</ProjectGuid>
+    <ProjectGuid>{A6E84EDC-A70A-498A-A85B-074AA80D01D1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Charts</RootNamespace>
   </PropertyGroup>
@@ -51,8 +51,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=8000000L;ARDUINO=165;ARDUINO_AVR_PRO;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\variants\eightanaloginputs;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\examples\WindowSelector;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ASensor;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ASensor\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/avr/include/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr//avr/include/avr/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ABuild\Examples\WindowSelector\Visual Micro\.WindowSelector.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\variants\eightanaloginputs;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\examples\Dialogs;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ASensor;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ASensor\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/avr/include/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr//avr/include/avr/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ABuild\Examples\Dialogs\Visual Micro\.Dialogs.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
     </ClCompile>
     <Link>
@@ -68,7 +68,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>__AVR_ATmega2560__;F_CPU=16000000L;ARDUINO=165;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ForcedIncludeFiles>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ABuild\Examples\AWind\WindowSelector\Visual Micro\.WindowSelector.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\cores\arduino;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\variants\mega;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\examples\Dialogs;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AFrame\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\AWind\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTFT\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\UTouch\utility;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\libraries;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/avr/include/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr//avr/include/avr/;C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\degtiadr\Private\Raspberri\arduino-1.6.5-r5\libraries\ABuild\Examples\AWind\Dialogs\Visual Micro\.Dialogs.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
