@@ -39,6 +39,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3-1692-4795-86FC-3DC68D90340D}"
 	ProjectSection(SolutionItems) = preProject
 		..\AWind\ArialNumFontPlus.c = ..\AWind\ArialNumFontPlus.c
+		..\AWind\ATimer.h = ..\AWind\ATimer.h
 		..\AWind\Button.h = ..\AWind\Button.h
 		..\AWind\ButtonWindow.h = ..\AWind\ButtonWindow.h
 		..\AWind\ChartDC.h = ..\AWind\ChartDC.h
@@ -56,6 +57,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\GaugeRadialPointer.h = ..\AWind\GaugeRadialPointer.h
 		..\AWind\IContentChangedEventReceiver.h = ..\AWind\IContentChangedEventReceiver.h
 		..\AWind\IDialogClosedEventReceiver.h = ..\AWind\IDialogClosedEventReceiver.h
+		..\AWind\ITimerEventReceiver.h = ..\AWind\ITimerEventReceiver.h
 		..\AWind\ITouchEventReceiver.h = ..\AWind\ITouchEventReceiver.h
 		..\AWind\KeyboardWindow.h = ..\AWind\KeyboardWindow.h
 		..\AWind\Label.h = ..\AWind\Label.h
@@ -105,6 +107,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabControl", "Examples\AWind\TabControl\TabControl.vcxproj", "{29512815-4336-4E71-BC1E-E190ED6AD316}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AWind_04_MobileKB", "Examples\AWind\AWind_04_MobileKB\AWind_04_MobileKB.vcxproj", "{9558D06D-AEC7-4062-B86C-72A4EE4F402B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VacuumPump", "Examples\AWind\VacuumPump\VacuumPump\VacuumPump.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -156,6 +160,10 @@ Global
 		{9558D06D-AEC7-4062-B86C-72A4EE4F402B}.Debug|Win32.Build.0 = Release|Win32
 		{9558D06D-AEC7-4062-B86C-72A4EE4F402B}.Release|Win32.ActiveCfg = Release|Win32
 		{9558D06D-AEC7-4062-B86C-72A4EE4F402B}.Release|Win32.Build.0 = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|Win32.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|Win32.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -175,5 +183,6 @@ Global
 		{A6E84EDC-A70A-498A-A85B-074AA80D01D1} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 		{29512815-4336-4E71-BC1E-E190ED6AD316} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 		{9558D06D-AEC7-4062-B86C-72A4EE4F402B} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 	EndGlobalSection
 EndGlobal

@@ -29,6 +29,10 @@ $RECYCLE.BIN/
 *.tlog
 *.cache
 *.lastbuildstate
+*.map
+*.elf
+*.buildinfo
+*.bin
 # =========================
 # Operating System Files
 # =========================
