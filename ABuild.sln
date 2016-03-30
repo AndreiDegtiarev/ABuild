@@ -29,9 +29,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASensor", "ASensor", "{018D
 		..\ASensor\DustSensor.h = ..\ASensor\DustSensor.h
 		..\ASensor\MagnetSensor.h = ..\ASensor\MagnetSensor.h
 		..\ASensor\MeasurementNode.h = ..\ASensor\MeasurementNode.h
+		..\ASensor\MPXPressureSensor.h = ..\ASensor\MPXPressureSensor.h
 		..\ASensor\MQ4MethaneGasSensor.h = ..\ASensor\MQ4MethaneGasSensor.h
 		..\ASensor\NRF24Transceiver.h = ..\ASensor\NRF24Transceiver.h
 		..\ASensor\SoilMoistureSensor.h = ..\ASensor\SoilMoistureSensor.h
+		..\ASensor\TimerSensorManager.h = ..\ASensor\TimerSensorManager.h
 		..\ASensor\Transceiver.h = ..\ASensor\Transceiver.h
 		..\ASensor\VoltmeterSensor.h = ..\ASensor\VoltmeterSensor.h
 	EndProjectSection
@@ -39,7 +41,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3-1692-4795-86FC-3DC68D90340D}"
 	ProjectSection(SolutionItems) = preProject
 		..\AWind\ArialNumFontPlus.c = ..\AWind\ArialNumFontPlus.c
-		..\AWind\ATimer.h = ..\AWind\ATimer.h
 		..\AWind\Button.h = ..\AWind\Button.h
 		..\AWind\ButtonWindow.h = ..\AWind\ButtonWindow.h
 		..\AWind\ChartDC.h = ..\AWind\ChartDC.h
