@@ -71,9 +71,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\PumpController.h" />
     <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\PumpHardware.h" />
-    <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\TabManual.h" />
-    <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\TabTemperature.h" />
-    <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\TabVacuum.h" />
+    <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\TabSetup.h" />
+    <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\TabProcess.h" />
+    <ClInclude Include="..\..\..\..\..\AWind\examples\VacuumPump\TabStart.h" />
     <ClInclude Include="__vm\.VacuumPump.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
