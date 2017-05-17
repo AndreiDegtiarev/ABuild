@@ -33,6 +33,11 @@ $RECYCLE.BIN/
 *.elf
 *.buildinfo
 *.bin
+Solution.VC.*
+*.a
+*.o
+*.d
+
 # =========================
 # Operating System Files
 # =========================

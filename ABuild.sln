@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AFrame", "AFrame", "{1129CE93-155B-4C66-B42B-AEE51627654E}"
 	ProjectSection(SolutionItems) = preProject
@@ -27,12 +27,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASensor", "ASensor", "{018D
 		..\ASensor\DHTTemperatureSensor.h = ..\ASensor\DHTTemperatureSensor.h
 		..\ASensor\DS18B20Sensor.h = ..\ASensor\DS18B20Sensor.h
 		..\ASensor\DustSensor.h = ..\ASensor\DustSensor.h
+		..\ASensor\ESP8266Transceiver.h = ..\ASensor\ESP8266Transceiver.h
 		..\ASensor\MagnetSensor.h = ..\ASensor\MagnetSensor.h
+		..\ASensor\MAX6675Thermocouple.h = ..\ASensor\MAX6675Thermocouple.h
 		..\ASensor\MeasurementNode.h = ..\ASensor\MeasurementNode.h
 		..\ASensor\MPXPressureSensor.h = ..\ASensor\MPXPressureSensor.h
 		..\ASensor\MQ4MethaneGasSensor.h = ..\ASensor\MQ4MethaneGasSensor.h
 		..\ASensor\NRF24Transceiver.h = ..\ASensor\NRF24Transceiver.h
+		..\ASensor\SensorCalibrator.h = ..\ASensor\SensorCalibrator.h
 		..\ASensor\SoilMoistureSensor.h = ..\ASensor\SoilMoistureSensor.h
+		..\ASensor\ThermistorSensor.h = ..\ASensor\ThermistorSensor.h
 		..\ASensor\TimerSensorManager.h = ..\ASensor\TimerSensorManager.h
 		..\ASensor\Transceiver.h = ..\ASensor\Transceiver.h
 		..\ASensor\VoltmeterSensor.h = ..\ASensor\VoltmeterSensor.h
