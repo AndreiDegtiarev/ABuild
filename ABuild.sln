@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AFrame", "AFrame", "{1129CE93-155B-4C66-B42B-AEE51627654E}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,6 +23,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASensor", "ASensor", "{018DAA23-BC4D-46CD-80D2-F8EC7F6FC63C}"
 	ProjectSection(SolutionItems) = preProject
 		..\ASensor\BMP085Sensor.h = ..\ASensor\BMP085Sensor.h
+		..\ASensor\CurrentmeterSensor.h = ..\ASensor\CurrentmeterSensor.h
 		..\ASensor\DHTHumiditySensor.h = ..\ASensor\DHTHumiditySensor.h
 		..\ASensor\DHTTemperatureSensor.h = ..\ASensor\DHTTemperatureSensor.h
 		..\ASensor\DS18B20Sensor.h = ..\ASensor\DS18B20Sensor.h
@@ -51,9 +52,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\ChartWindow.h = ..\AWind\ChartWindow.h
 		..\AWind\Color.h = ..\AWind\Color.h
 		..\AWind\DC.h = ..\AWind\DC.h
+		..\AWind\DC_GfxOLED.h = ..\AWind\DC_GfxOLED.h
+		..\AWind\DC_UTFT.h = ..\AWind\DC_UTFT.h
 		..\AWind\Decorator.h = ..\AWind\Decorator.h
 		..\AWind\DecoratorPrimitives.h = ..\AWind\DecoratorPrimitives.h
 		..\AWind\DefaultDecorators.h = ..\AWind\DefaultDecorators.h
+		..\AWind\DefaultDecoratorsOLED.h = ..\AWind\DefaultDecoratorsOLED.h
 		..\AWind\Dialog.h = ..\AWind\Dialog.h
 		..\AWind\Environment.cpp = ..\AWind\Environment.cpp
 		..\AWind\Environment.h = ..\AWind\Environment.h
@@ -78,6 +82,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWind", "AWind", "{E5E515A3
 		..\AWind\TextBoxStrTouch.cpp = ..\AWind\TextBoxStrTouch.cpp
 		..\AWind\TextBoxStrTouch.h = ..\AWind\TextBoxStrTouch.h
 		..\AWind\TimeSerieBuffer.h = ..\AWind\TimeSerieBuffer.h
+		..\AWind\Touch.h = ..\AWind\Touch.h
+		..\AWind\TouchUTFT.h = ..\AWind\TouchUTFT.h
 		..\AWind\ViewModusWindow.h = ..\AWind\ViewModusWindow.h
 		..\AWind\Window.cpp = ..\AWind\Window.cpp
 		..\AWind\Window.h = ..\AWind\Window.h
@@ -117,6 +123,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VacuumPump", "Examples\AWind\VacuumPump\VacuumPump\VacuumPump.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrillThermometer", "Examples\ASensor\GrillThermometer\GrillThermometer.vcxproj", "{D67D18DB-F6A9-4BF7-9DD1-24559BBB893B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GfxOLED_DHT", "Examples\AWind\GfxOLED_DHT\GfxOLED_DHT.vcxproj", "{FB15BEDB-AF9F-4C90-9207-52251F8B48AD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GfxOLED_Oscilloscope", "Examples\AWind\GfxOLED_Oscilloscope\GfxOLED_Oscilloscope.vcxproj", "{1A6BB855-97E4-4709-B450-3F4747C31678}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GfxOLED_SmartCharger", "Examples\AWind\GfxOLED_SmartCharger\GfxOLED_SmartCharger.vcxproj", "{81EA8F89-5C4B-488C-A2B4-5B4A1C76CA1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -176,6 +188,18 @@ Global
 		{D67D18DB-F6A9-4BF7-9DD1-24559BBB893B}.Debug|Win32.Build.0 = Release|Win32
 		{D67D18DB-F6A9-4BF7-9DD1-24559BBB893B}.Release|Win32.ActiveCfg = Release|Win32
 		{D67D18DB-F6A9-4BF7-9DD1-24559BBB893B}.Release|Win32.Build.0 = Release|Win32
+		{FB15BEDB-AF9F-4C90-9207-52251F8B48AD}.Debug|Win32.ActiveCfg = Release|Win32
+		{FB15BEDB-AF9F-4C90-9207-52251F8B48AD}.Debug|Win32.Build.0 = Release|Win32
+		{FB15BEDB-AF9F-4C90-9207-52251F8B48AD}.Release|Win32.ActiveCfg = Release|Win32
+		{FB15BEDB-AF9F-4C90-9207-52251F8B48AD}.Release|Win32.Build.0 = Release|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31678}.Debug|Win32.ActiveCfg = Release|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31678}.Debug|Win32.Build.0 = Release|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31678}.Release|Win32.ActiveCfg = Release|Win32
+		{1A6BB855-97E4-4709-B450-3F4747C31678}.Release|Win32.Build.0 = Release|Win32
+		{81EA8F89-5C4B-488C-A2B4-5B4A1C76CA1B}.Debug|Win32.ActiveCfg = Release|Win32
+		{81EA8F89-5C4B-488C-A2B4-5B4A1C76CA1B}.Debug|Win32.Build.0 = Release|Win32
+		{81EA8F89-5C4B-488C-A2B4-5B4A1C76CA1B}.Release|Win32.ActiveCfg = Release|Win32
+		{81EA8F89-5C4B-488C-A2B4-5B4A1C76CA1B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,5 +221,11 @@ Global
 		{9558D06D-AEC7-4062-B86C-72A4EE4F402B} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 		{C5F80730-F44F-4478-BDAE-6634EFC2CA88} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
 		{D67D18DB-F6A9-4BF7-9DD1-24559BBB893B} = {96D17C9A-E703-45C5-870D-3C1E3399EFD2}
+		{FB15BEDB-AF9F-4C90-9207-52251F8B48AD} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{1A6BB855-97E4-4709-B450-3F4747C31678} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+		{81EA8F89-5C4B-488C-A2B4-5B4A1C76CA1B} = {8AAF282E-ABF5-4EA3-9E57-989C557A11A7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D91E9867-0112-4CE6-9149-A551A5511AE6}
 	EndGlobalSection
 EndGlobal

@@ -33,6 +33,7 @@ $RECYCLE.BIN/
 *.elf
 *.buildinfo
 *.bin
+*.hex
 Solution.VC.*
 *.a
 *.o
@@ -50,7 +51,8 @@ Solution.VC.*
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
